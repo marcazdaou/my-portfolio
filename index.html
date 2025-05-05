@@ -373,14 +373,45 @@
                 <h2 class="section-title">Contact</h2>
             
                 <div class="contact__container bd-grid">
-                    <form action="https://formsubmit.co/marcazdaou@gmail.com" method="POST" class="contact__form">
-                        <input type="text" name="name" placeholder="Name" class="contact__input" required>
-                        <input type="email" name="email" placeholder="Email" class="contact__input" required>
+                    <form id="contact-form" class="contact__form">
+                        <input type="text" name="user_name" placeholder="Name" class="contact__input" required>
+                        <input type="email" name="user_email" placeholder="Email" class="contact__input" required>
                         <textarea name="message" cols="0" rows="10" placeholder="Message" class="contact__input" required></textarea>
                         <button type="submit" class="contact__button button">Send</button>
                     </form>
                 </div>
             </section>
+            
+            <!-- Contact Script -->
+            <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+            <script type="text/javascript">
+                (function() {
+                    // Initialize EmailJS with your user ID
+                    emailjs.init("VOrBEAYCDJL6135xN"); // Replace with your actual EmailJS user ID
+                })();
+            
+                // Handle form submission
+                document.getElementById('contact-form').addEventListener('submit', function(event) {
+                    event.preventDefault();
+                    
+                    // Show sending status
+                    this.querySelector('button').textContent = 'Sending...';
+                    
+                    // Send the email using EmailJS
+                    emailjs.sendForm('service_6k1shfo', 'template_ap0dnti', this)
+                        .then(function() {
+                            // Show success message
+                            document.getElementById('contact-form').reset();
+                            document.getElementById('contact-form').querySelector('button').textContent = 'Send';
+                            alert('Your message has been sent successfully!');
+                        }, function(error) {
+                            // Show error message
+                            document.getElementById('contact-form').querySelector('button').textContent = 'Send';
+                            alert('Sorry, there was an error sending your message. Please try again later.');
+                            console.log('EmailJS error:', error);
+                        });
+                });
+            </script>
 
         <!--===== FOOTER =====-->
         <footer class="footer">
