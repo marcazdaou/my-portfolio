@@ -214,7 +214,7 @@ img {
   width: 260px;
 }
 .home__blob {
-  fill: var(--first-color);
+  fill: #3949AB;
 }
 .home__blob-img {
   width: 360px;
@@ -304,6 +304,54 @@ img {
 }
 .skills__img {
   border-radius: 0.5rem;
+}
+
+.skills__coq {
+  width: 85%;
+}
+.skills__r {
+  width: 85%;
+}
+.skills__java {
+  width: 90%;
+}
+.skills__c {
+  width: 90%;
+}
+.skills__python {
+  width: 85%;
+}
+.skills__english {
+  width: 100%;
+}
+.skills__french {
+  width: 100%;
+}
+.skills__arabic {
+  width: 100%;
+}
+
+/* Add some spacing for the languages section */
+.skills__subtitle-languages {
+  margin-top: 2rem;
+}
+
+/* Add styling for the skills tools section */
+.skills__tools {
+  margin-top: 1rem;
+}
+
+/* Make the icons blue to match your theme */
+.skills__icon {
+  font-size: 1.8rem;
+  margin-right: var(--mb-2);
+  color: var(--first-color);
+}
+
+/* Add hover effect to skill items */
+.skills__data:hover {
+  transform: translateY(-3px);
+  transition: .3s;
 }
 
 /* ===== WORK =====*/
