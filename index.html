@@ -3,29 +3,27 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Marc Abi Zeid Daou – Software Engineer & CS Student at UMass Boston. Full-stack developer, data engineer, and compiler builder.">
 
         <link rel="stylesheet" href="assets/css/styles.css">
-
-        <!-- =====BOX ICONS===== -->
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
-        <title>Portfolio website complete</title>
+        <title>Marc Abi Zeid Daou | Software Engineer</title>
     </head>
     <body>
         <!--===== HEADER =====-->
         <header class="l-header">
             <nav class="nav bd-grid">
-                <div>
-                    <a href="#" class="nav__logo">Marc Daou</a>
-                </div>
+                <a href="#" class="nav__logo">Marc<span class="nav__logo-dot">.</span></a>
 
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                        <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                        <li class="nav__item"><a href="#home"       class="nav__link active-link">Home</a></li>
+                        <li class="nav__item"><a href="#about"      class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#skills"     class="nav__link">Skills</a></li>
+                        <li class="nav__item"><a href="#experience" class="nav__link">Experience</a></li>
+                        <li class="nav__item"><a href="#work"       class="nav__link">Projects</a></li>
+                        <li class="nav__item"><a href="#contact"    class="nav__link">Contact</a></li>
                     </ul>
                 </div>
 
@@ -39,405 +37,476 @@
             <!--===== HOME =====-->
             <section class="home bd-grid" id="home">
                 <div class="home__data">
-                    <h1 class="home__title">Hi,<br> I am <span class="home__title-color">Marc</span><br>Software Engineer</h1>
+                    <div class="home__status">
+                        <span class="status__dot"></span>
+                        Open to opportunities
+                    </div>
+                    <p class="home__greeting">Hi there, I'm</p>
+                    <h1 class="home__title">Marc <span class="home__title-color">Abi Zeid Daou</span></h1>
+                    <p class="home__subtitle">
+                        <span id="typewriter"></span><span class="typewriter-cursor">|</span>
+                    </p>
+                    <p class="home__desc">Building full-stack apps, data pipelines, and compilers — turning complex problems into clean, shipped software.</p>
 
-                    <a href="#contact" class="button">Contact</a>
+                    <div class="home__buttons">
+                        <a href="#contact" class="button">Get In Touch</a>
+                        <a href="assets/MarcDaoucv.pdf" class="button button--ghost" target="_blank">
+                            Resume <i class='bx bx-download'></i>
+                        </a>
+                    </div>
+
+                    <div class="home__social">
+                        <a href="https://www.linkedin.com/in/marc-abi-zeid-daou/" class="home__social-icon" target="_blank" aria-label="LinkedIn">
+                            <i class='bx bxl-linkedin'></i>
+                        </a>
+                        <a href="https://github.com/marcazdaou" class="home__social-icon" target="_blank" aria-label="GitHub">
+                            <i class='bx bxl-github'></i>
+                        </a>
+                        <a href="assets/MarcDaoucv.pdf" class="home__social-icon" target="_blank" aria-label="Resume PDF">
+                            <i class='bx bx-file'></i>
+                        </a>
+                    </div>
                 </div>
 
-                <div class="home__social">
-                    <a href="https://www.linkedin.com/in/marc-abi-zeid-daou/" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
-                    <a href="assets/MarcDaoucv.pdf" class="home__social-icon" target="_blank">
-                        <i class='bx bx-file'></i>
-                      </a>
-                    <a href="https://github.com/marcazdaou?tab=repositories" class="home__social-icon"><i class='bx bxl-github' ></i></a>
-                </div>
-
-                <div class="home__img">
-                    <!-- Updated SVG Blob with new color and shape -->
-<svg class="home__blob" viewBox="0 0 600 700" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Add gradient definition for a more modern look -->
-    <defs>
-        <linearGradient id="blobGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" style="stop-color:#4776E6" />
-            <stop offset="100%" style="stop-color:#8E54E9" />
-        </linearGradient>
-    </defs>
-    
-    <mask id="mask0" mask-type="alpha">
-        <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z" />
-    </mask>
-    <g mask="url(#mask0)">
-        <!-- Updated fill to use the gradient -->
-        <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z" fill="url(#blobGradient)" />
-        <image class="home__blob-img" x="50" y="80" width="100" height="387" href="assets/img/shot1.png" />
-    </g>
-</svg>
+                <div class="home__terminal-wrapper">
+                    <div class="terminal">
+                        <div class="terminal__bar">
+                            <span class="terminal__dot terminal__dot--red"></span>
+                            <span class="terminal__dot terminal__dot--yellow"></span>
+                            <span class="terminal__dot terminal__dot--green"></span>
+                            <span class="terminal__title">marc@portfolio ~ %</span>
+                        </div>
+                        <div class="terminal__body" id="terminal-output"></div>
+                    </div>
+                    <div class="terminal__glow"></div>
                 </div>
             </section>
 
             <!--===== ABOUT =====-->
-        
-<section class="about section" id="about">
-    <h2 class="section-title">About</h2>
+            <section class="about section" id="about">
+                <h2 class="section-title">About Me</h2>
 
-    <div class="about__container bd-grid">
-        <!-- Left Column - Profile Image and Quick Info -->
-        <div class="about__left-column">
-            <div class="about__img">
-                <img src="assets/img/Photo2.jpg" alt="Marc Abi Zeid Daou">
-            </div>
-            
-            <div class="about__quick-info">
-                <h2 class="about__subtitle">that's me!</h2>
-                <p class="about__tagline">Computer Science Student</p>
-                <p class="about__location">Boston, Massachusetts</p>
-                <p class="about__education"><span class="highlight"></span> UMass Boston</p>
-            </div>
-        </div>
-        
-        <!-- Right Column - Detailed Content -->
-        <div class="about__right-column">
-            <div class="about__intro">
-                <p class="about__text">
-                    I'm a computer science student and software developer based in Boston, Massachusetts. 
-                    Currently pursuing my Bachelor of Science in Computer Science at the University of 
-                    Massachusetts Boston (expected graduation: May 2026), I combine theoretical knowledge 
-                    with practical application through innovative programming projects.
-                </p>
-            </div>
-            
-            <div class="about__section">
-                <h3 class="about__mini-title"><span class="highlight">Technical Expertise</span></h3>
-                <p class="about__text">
-                    With proficiency in multiple programming languages including <span class="highlight">Coq</span>, <span class="highlight">R</span>, 
-                    <span class="highlight">Java</span>, <span class="highlight">C</span>, and <span class="highlight">Python</span>, 
-                    I specialize in developing efficient algorithms and optimized systems. My project portfolio 
-                    demonstrates my commitment to creating practical solutions that balance performance with 
-                    resource efficiency:
-                </p>
-                <ul class="about__list">
-                    <li>Engineered a <span class="highlight">high-efficiency Huffman encoding algorithm</span> achieving up to 50% file size reduction</li>
-                    <li>Developed an intelligent autocomplete system processing <span class="highlight">10,000+ query terms</span> with O(log N) efficiency</li>
-                    <li>Built a secure RSA cryptosystem implementing key generation, encryption, and <span class="highlight">decryption functionalities</span></li>
-                </ul>
-            </div>
-            
-            <div class="about__section">
-                <h3 class="about__mini-title"><span class="highlight">Academic Excellence</span></h3>
-                <p class="about__text">
-                    As a dedicated student maintaining a <span class="highlight">high GPA</span>, I've been recognized with several academic 
-                    distinctions including the <span class="highlight">Paul English Scholarship</span>, MathWorks Scholar award, and First-Year 
-                    Student Achievement Scholarship. My commitment to academic excellence is matched by my passion 
-                    for applying computer science concepts to solve real-world challenges.
-                </p>
-            </div>
-            
-            <div class="about__section">
-                <h3 class="about__mini-title"><span class="highlight">Multilingual Communication</span></h3>
-                <p class="about__text">
-                    Beyond my technical skills, I bring valuable multilingual capabilities with fluency in <span class="highlight">English</span>, 
-                    <span class="highlight">French</span>, and <span class="highlight">Arabic</span> (both spoken and written). This cultural versatility enables me to collaborate 
-                    effectively in diverse environments and approach problems from multiple perspectives.
-                </p>
-            </div>
-            
-            <div class="about__section">
-                <h3 class="about__mini-title"><span class="highlight">Professional Experience</span></h3>
-                <p class="about__text">
-                    My professional experience extends beyond software development to include logistics management 
-                    and customer service roles that have strengthened my <span class="highlight">leadership</span>, <span class="highlight">communication</span>, and <span class="highlight">organizational 
-                    skills</span>. This combination of technical knowledge and practical business experience allows me to 
-                    bridge the gap between complex technical solutions and real-world applications.
-                </p>
-            </div>
-            
-            <div class="about__section">
-                <h3 class="about__mini-title"><span class="highlight">Looking Forward</span></h3>
-                <p class="about__text">
-                    I'm constantly exploring new technologies and methodologies to expand my skill set while 
-                    pursuing opportunities to apply my knowledge in challenging environments. I'm particularly 
-                    interested in <span class="highlight">algorithm optimization</span>, <span class="highlight">cryptography</span>, and developing <span class="highlight">efficient solutions</span> for 
-                    data-intensive applications.
-                </p>
-            </div>
-        </div>                                   
-    </div>
-</section>
-
-
-            <!--===== SKILLS =====-->
-            <!--===== SKILLS =====-->
-<section class="skills section" id="skills">
-    <h2 class="section-title">Skills</h2>
-
-    <div class="skills__container bd-grid">          
-        <div>
-            <h2 class="skills__subtitle">Programming Languages</h2>
-            <p class="skills__text">I specialize in developing efficient algorithms and optimized systems with proficiency in multiple programming languages.</p>
-            
-            <div class="skills__data">
-                <div class="skills__names">
-                    <i class='bx bx-code-alt skills__icon'></i>
-                    <span class="skills__name">Coq</span>
-                </div>
-                <div class="skills__bar skills__coq">
-                </div>
-                <div>
-                    <span class="skills__percentage">85%</span>
-                </div>
-            </div>
-            
-            <div class="skills__data">
-                <div class="skills__names">
-                    <i class='bx bx-analyse skills__icon'></i>
-                    <span class="skills__name">R</span>
-                </div>
-                <div class="skills__bar skills__r">
-                </div>
-                <div>
-                    <span class="skills__percentage">85%</span>
-                </div>
-            </div>
-            
-            <div class="skills__data">
-                <div class="skills__names">
-                    <i class='bx bxl-java skills__icon'></i>
-                    <span class="skills__name">Java</span>
-                </div>
-                <div class="skills__bar skills__java">
-                </div>
-                <div>
-                    <span class="skills__percentage">90%</span>
-                </div>
-            </div>
-            
-            <div class="skills__data">
-                <div class="skills__names">
-                    <i class='bx bx-code-curly skills__icon'></i>
-                    <span class="skills__name">C</span>
-                </div>
-                <div class="skills__bar skills__c">
-                </div>
-                <div>
-                    <span class="skills__percentage">90%</span>
-                </div>
-            </div>
-            
-            <div class="skills__data">
-                <div class="skills__names">
-                    <i class='bx bxl-python skills__icon'></i>
-                    <span class="skills__name">Python</span>
-                </div>
-                <div class="skills__bar skills__python">
-                </div>
-                <div>
-                    <span class="skills__percentage">85%</span>
-                </div>
-            </div>
-        </div>
-        
-        <div>
-            <h2 class="skills__subtitle">Development Tools</h2>
-            <p class="skills__text">I'm proficient with a variety of development environments and tools for efficient software creation.</p>
-            
-            <div class="skills__tools">
-                <div class="skills__data">
-                    <div class="skills__names">
-                        <i class='bx bx-code-block skills__icon'></i>
-                        <span class="skills__name">IntelliJ IDEA</span>
-                    </div>
-                </div>
-                
-                <div class="skills__data">
-                    <div class="skills__names">
-                        <i class='bx bx-code-block skills__icon'></i>
-                        <span class="skills__name">PyCharm</span>
-                    </div>
-                </div>
-                
-                <div class="skills__data">
-                    <div class="skills__names">
-                        <i class='bx bx-code-block skills__icon'></i>
-                        <span class="skills__name">CLion</span>
-                    </div>
-                </div>
-                
-                <div class="skills__data">
-                    <div class="skills__names">
-                        <i class='bx bx-analyse skills__icon'></i>
-                        <span class="skills__name">RStudio</span>
-                    </div>
-                </div>
-                
-                <div class="skills__data">
-                    <div class="skills__names">
-                        <i class='bx bx-code-block skills__icon'></i>
-                        <span class="skills__name">Coq IDE</span>
-                    </div>
-                </div>
-                
-                <div class="skills__data">
-                    <div class="skills__names">
-                        <i class='bx bxl-github skills__icon'></i>
-                        <span class="skills__name">GitHub</span>
-                    </div>
-                </div>
-                
-                <div class="skills__data">
-                    <div class="skills__names">
-                        <i class='bx bx-chip skills__icon'></i>
-                        <span class="skills__name">Arduino/Microcontroller</span>
-                    </div>
-                </div>
-            </div>
-            
-            <h2 class="skills__subtitle skills__subtitle-languages">Languages</h2>
-            <div class="skills__languages">
-                <div class="skills__data">
-                    <div class="skills__names">
-                        <i class='bx bx-globe skills__icon'></i>
-                        <span class="skills__name">English</span>
-                    </div>
-                    <div class="skills__bar skills__english">
-                    </div>
-                    <div>
-                        <span class="skills__percentage">100%</span>
-                    </div>
-                </div>
-                
-                <div class="skills__data">
-                    <div class="skills__names">
-                        <i class='bx bx-globe skills__icon'></i>
-                        <span class="skills__name">French</span>
-                    </div>
-                    <div class="skills__bar skills__french">
-                    </div>
-                    <div>
-                        <span class="skills__percentage">100%</span>
-                    </div>
-                </div>
-                
-                <div class="skills__data">
-                    <div class="skills__names">
-                        <i class='bx bx-globe skills__icon'></i>
-                        <span class="skills__name">Arabic</span>
-                    </div>
-                    <div class="skills__bar skills__arabic">
-                    </div>
-                    <div>
-                        <span class="skills__percentage">100%</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-            <!--===== WORK =====-->
-            <section class="work section" id="work">
-                <h2 class="section-title">Projects</h2>
-            
-                <div class="work__container bd-grid">
-                    <div class="work__item">
-                        <img src="assets/img/huff.jpeg" alt="Huffman Compression Utility" class="work__img">
-                        <div class="work__overlay">
-                            <div class="work__content">
-                                <h3 class="work__title">Huffman Compression Utility</h3>
-                                <span class="work__subtitle">C, Data Structures, Algorithm Optimization</span>
-                                <a href="https://github.com/marcazdaou/Huffman-Code" class="work__link" target="_blank">
-                                    <i class='bx bx-link-alt work__icon'></i>
-                                </a>
+                <div class="about__container bd-grid">
+                    <div class="about__left">
+                        <div class="about__img-wrapper">
+                            <img src="assets/img/Photo2.jpg" alt="Marc Abi Zeid Daou" class="about__img">
+                            <div class="about__img-border"></div>
+                        </div>
+                        <div class="about__stats">
+                            <div class="stat__card">
+                                <span class="stat__number">3.86</span>
+                                <span class="stat__label">GPA</span>
+                            </div>
+                            <div class="stat__card">
+                                <span class="stat__number">3+</span>
+                                <span class="stat__label">Scholarships</span>
+                            </div>
+                            <div class="stat__card">
+                                <span class="stat__number">3</span>
+                                <span class="stat__label">Languages</span>
                             </div>
                         </div>
                     </div>
-                    
-                    <div class="work__item">
-                        <img src="assets/img/auto1.jpg" alt="Autocomplete System" class="work__img">
-                        <div class="work__overlay">
-                            <div class="work__content">
-                                <h3 class="work__title">Autocomplete System</h3>
-                                <span class="work__subtitle">Java, Binary Search, Term Ranking</span>
-                                <a href="https://github.com/marcazdaou/Autocomplete" class="work__link" target="_blank">
-                                    <i class='bx bx-link-alt work__icon'></i>
-                                </a>
+
+                    <div class="about__right">
+                        <p class="about__location"><i class='bx bx-map'></i> Boston, MA &middot; UMass Boston &middot; Graduating May 2026</p>
+                        <p class="about__text">
+                            I'm a computer science student and software developer who builds real things — a production e-commerce platform deployed on Render, an ML-powered salary estimator live on Streamlit Cloud, and a JVM bytecode compiler built from scratch in Java. I care about clean architecture, measurable results, and shipping software that actually works.
+                        </p>
+                        <p class="about__text">
+                            Outside of code, I'm fluent in English, French, and Arabic, and I bring real internship experience building AI-powered compliance automation on Azure. I bridge technical depth with practical business context.
+                        </p>
+                        <div class="about__achievements">
+                            <div class="achievement">
+                                <i class='bx bx-award achievement__icon'></i>
+                                <span>Paul English Scholarship – Fall 2024</span>
                             </div>
-                        </div>
-                    </div>
-                    
-                    <div class="work__item">
-                        <img src="assets/img/RSA.jpg" alt="RSA Cryptosystem" class="work__img">
-                        <div class="work__overlay">
-                            <div class="work__content">
-                                <h3 class="work__title">RSA Cryptosystem</h3>
-                                <span class="work__subtitle">Python, Cryptography, Algorithm Optimization</span>
-                                <a href="https://github.com/marcazdaou/RSA-cryptosystem" class="work__link" target="_blank">
-                                    <i class='bx bx-link-alt work__icon'></i>
-                                </a>
+                            <div class="achievement">
+                                <i class='bx bx-award achievement__icon'></i>
+                                <span>MathWorks Scholar – Fall 2023</span>
+                            </div>
+                            <div class="achievement">
+                                <i class='bx bx-award achievement__icon'></i>
+                                <span>First-Year Student Achievement Scholarship</span>
+                            </div>
+                            <div class="achievement">
+                                <i class='bx bxs-graduation achievement__icon'></i>
+                                <span>Dean's List</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
+
+            <!--===== SKILLS =====-->
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Skills</h2>
+
+                <div class="skills__container bd-grid">
+                    <div class="skills__category">
+                        <div class="skills__category-header">
+                            <i class='bx bx-code-alt skills__category-icon'></i>
+                            <h3 class="skills__category-title">Programming Languages</h3>
+                        </div>
+                        <div class="skills__tags">
+                            <span class="skill__tag">Python</span>
+                            <span class="skill__tag">Java</span>
+                            <span class="skill__tag">C</span>
+                            <span class="skill__tag">JavaScript</span>
+                            <span class="skill__tag">SQL</span>
+                            <span class="skill__tag">HTML / CSS</span>
+                            <span class="skill__tag">R</span>
+                            <span class="skill__tag">Coq</span>
+                            <span class="skill__tag">Racket</span>
+                        </div>
+                    </div>
+
+                    <div class="skills__category">
+                        <div class="skills__category-header">
+                            <i class='bx bx-layer skills__category-icon'></i>
+                            <h3 class="skills__category-title">Frameworks &amp; Libraries</h3>
+                        </div>
+                        <div class="skills__tags">
+                            <span class="skill__tag">Django</span>
+                            <span class="skill__tag">Streamlit</span>
+                            <span class="skill__tag">Pandas</span>
+                            <span class="skill__tag">NumPy</span>
+                            <span class="skill__tag">Scikit-learn</span>
+                            <span class="skill__tag">Plotly</span>
+                            <span class="skill__tag">Chart.js</span>
+                            <span class="skill__tag">React</span>
+                            <span class="skill__tag">Node.js</span>
+                        </div>
+                    </div>
+
+                    <div class="skills__category">
+                        <div class="skills__category-header">
+                            <i class='bx bx-data skills__category-icon'></i>
+                            <h3 class="skills__category-title">Databases</h3>
+                        </div>
+                        <div class="skills__tags">
+                            <span class="skill__tag">PostgreSQL</span>
+                            <span class="skill__tag">SQLite</span>
+                            <span class="skill__tag">MongoDB</span>
+                        </div>
+                    </div>
+
+                    <div class="skills__category">
+                        <div class="skills__category-header">
+                            <i class='bx bx-cloud skills__category-icon'></i>
+                            <h3 class="skills__category-title">Cloud &amp; DevOps</h3>
+                        </div>
+                        <div class="skills__tags">
+                            <span class="skill__tag">AWS</span>
+                            <span class="skill__tag">Azure</span>
+                            <span class="skill__tag">GCP</span>
+                            <span class="skill__tag">Docker</span>
+                            <span class="skill__tag">Render</span>
+                            <span class="skill__tag">Gunicorn</span>
+                        </div>
+                    </div>
+
+                    <div class="skills__category">
+                        <div class="skills__category-header">
+                            <i class='bx bx-wrench skills__category-icon'></i>
+                            <h3 class="skills__category-title">Tools &amp; Environments</h3>
+                        </div>
+                        <div class="skills__tags">
+                            <span class="skill__tag">Git / GitHub</span>
+                            <span class="skill__tag">Linux</span>
+                            <span class="skill__tag">VS Code</span>
+                            <span class="skill__tag">IntelliJ IDEA</span>
+                            <span class="skill__tag">PyCharm</span>
+                            <span class="skill__tag">Jupyter</span>
+                            <span class="skill__tag">VMware</span>
+                            <span class="skill__tag">Arduino</span>
+                        </div>
+                    </div>
+
+                    <div class="skills__category">
+                        <div class="skills__category-header">
+                            <i class='bx bx-globe skills__category-icon'></i>
+                            <h3 class="skills__category-title">Spoken Languages</h3>
+                        </div>
+                        <div class="skills__tags">
+                            <span class="skill__tag skill__tag--lang">English &nbsp;<em>Native</em></span>
+                            <span class="skill__tag skill__tag--lang">French &nbsp;<em>Fluent</em></span>
+                            <span class="skill__tag skill__tag--lang">Arabic &nbsp;<em>Fluent</em></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--===== EXPERIENCE =====-->
+            <section class="experience section" id="experience">
+                <h2 class="section-title">Experience</h2>
+
+                <div class="experience__container bd-grid">
+                    <div class="timeline">
+
+                        <div class="timeline__item">
+                            <div class="timeline__marker">
+                                <div class="timeline__dot"></div>
+                                <div class="timeline__line"></div>
+                            </div>
+                            <div class="timeline__card">
+                                <div class="timeline__header">
+                                    <div>
+                                        <h3 class="timeline__role">Software Engineering Intern</h3>
+                                        <p class="timeline__company"><i class='bx bx-buildings'></i> Pulpdent Corporation &middot; Watertown, MA</p>
+                                    </div>
+                                    <span class="timeline__date">Jun 2025 – Sep 2025</span>
+                                </div>
+                                <div class="timeline__tags">
+                                    <span class="skill__tag skill__tag--sm">Python</span>
+                                    <span class="skill__tag skill__tag--sm">Azure</span>
+                                    <span class="skill__tag skill__tag--sm">AI Agents</span>
+                                    <span class="skill__tag skill__tag--sm">IT Server</span>
+                                </div>
+                                <ul class="timeline__list">
+                                    <li>Developed an AI-powered agent on Azure to automate MDR (Medical Device Report) file generation and regulatory compliance workflows, reducing manual documentation time and improving accuracy across product complaint and safety data processes.</li>
+                                    <li>Collaborated with the regulatory affairs team to translate compliance requirements into automated workflows, bridging technical and business needs.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="timeline__item timeline__item--last">
+                            <div class="timeline__marker">
+                                <div class="timeline__dot"></div>
+                            </div>
+                            <div class="timeline__card">
+                                <div class="timeline__header">
+                                    <div>
+                                        <h3 class="timeline__role">Logistics Intern</h3>
+                                        <p class="timeline__company"><i class='bx bx-buildings'></i> Pulpdent Corporation &middot; Watertown, MA</p>
+                                    </div>
+                                    <span class="timeline__date">Jun 2024 – Aug 2024</span>
+                                </div>
+                                <ul class="timeline__list">
+                                    <li>Streamlined shipping operations by assisting with order fulfillment, backorder allocation, digitizing 10 months of packing slips, and improving inventory tracking and efficiency.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!--===== PROJECTS =====-->
+            <section class="work section" id="work">
+                <h2 class="section-title">Projects</h2>
+
+                <div class="work__container bd-grid">
+
+                    <div class="project__card">
+                        <div class="project__banner project__banner--green">
+                            <i class='bx bx-leaf project__banner-icon'></i>
+                            <span class="project__banner-label">Full-Stack · E-Commerce</span>
+                        </div>
+                        <div class="project__content">
+                            <div class="project__header">
+                                <h3 class="project__title">Green Thumb</h3>
+                                <div class="project__links">
+                                    <a href="https://github.com/marcazdaou/Green-Thumb" target="_blank" class="project__link" aria-label="GitHub"><i class='bx bxl-github'></i></a>
+                                    <a href="https://green-thumb-bxmc.onrender.com" target="_blank" class="project__link project__link--demo">Live <i class='bx bx-link-external'></i></a>
+                                </div>
+                            </div>
+                            <p class="project__desc">Production Django app deployed on Render with PostgreSQL, user authentication, shopping cart, review system, and order tracking — serving a 16-product catalog with full test suite. Features a pandas-powered analytics dashboard with 6 KPI metrics and Chart.js visualizations.</p>
+                            <div class="project__tags">
+                                <span class="skill__tag skill__tag--sm">Python</span>
+                                <span class="skill__tag skill__tag--sm">Django</span>
+                                <span class="skill__tag skill__tag--sm">PostgreSQL</span>
+                                <span class="skill__tag skill__tag--sm">Pandas</span>
+                                <span class="skill__tag skill__tag--sm">Chart.js</span>
+                                <span class="skill__tag skill__tag--sm">Render</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project__card">
+                        <div class="project__banner project__banner--blue">
+                            <i class='bx bx-trending-up project__banner-icon'></i>
+                            <span class="project__banner-label">Data Engineering · ML</span>
+                        </div>
+                        <div class="project__content">
+                            <div class="project__header">
+                                <h3 class="project__title">Job Market Analytics</h3>
+                                <div class="project__links">
+                                    <a href="https://github.com/marcazdaou/Job-Market-Analysis" target="_blank" class="project__link" aria-label="GitHub"><i class='bx bxl-github'></i></a>
+                                    <a href="https://job-market-analysis-ndmqelnezlfa64hyyhhwkv.streamlit.app/" target="_blank" class="project__link project__link--demo">Live <i class='bx bx-link-external'></i></a>
+                                </div>
+                            </div>
+                            <p class="project__desc">End-to-end data pipeline ingesting 784 real job postings into SQLite. Trained and compared 3 regression models via 5-fold cross-validation, selecting the best performer (CV R²&nbsp;=&nbsp;0.55) from 46 engineered features. Live Streamlit dashboard with 7 real-time charts and a salary estimator.</p>
+                            <div class="project__tags">
+                                <span class="skill__tag skill__tag--sm">Python</span>
+                                <span class="skill__tag skill__tag--sm">Streamlit</span>
+                                <span class="skill__tag skill__tag--sm">Scikit-learn</span>
+                                <span class="skill__tag skill__tag--sm">Pandas</span>
+                                <span class="skill__tag skill__tag--sm">SQLite</span>
+                                <span class="skill__tag skill__tag--sm">Plotly</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project__card">
+                        <div class="project__banner project__banner--dark">
+                            <i class='bx bx-code-curly project__banner-icon'></i>
+                            <span class="project__banner-label">Compiler Design · JVM</span>
+                        </div>
+                        <div class="project__content">
+                            <div class="project__header">
+                                <h3 class="project__title">j-- Compiler</h3>
+                                <div class="project__links">
+                                    <a href="https://github.com/marcazdaou/compilers" target="_blank" class="project__link" aria-label="GitHub"><i class='bx bxl-github'></i></a>
+                                </div>
+                            </div>
+                            <p class="project__desc">Extended a Java subset compiler with a full lexer → parser → AST → semantic analysis → JVM bytecode pipeline, adding 6 new types and 15+ language features including ternary expressions, compound assignments, do-while/for/switch, and TABLESWITCH/LOOKUPSWITCH optimization.</p>
+                            <div class="project__tags">
+                                <span class="skill__tag skill__tag--sm">Java</span>
+                                <span class="skill__tag skill__tag--sm">JVM Bytecode</span>
+                                <span class="skill__tag skill__tag--sm">AST</span>
+                                <span class="skill__tag skill__tag--sm">Compiler Design</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project__card">
+                        <div class="project__banner project__banner--orange">
+                            <i class='bx bx-compress project__banner-icon'></i>
+                            <span class="project__banner-label">Algorithms · C</span>
+                        </div>
+                        <div class="project__content">
+                            <div class="project__header">
+                                <h3 class="project__title">Huffman Compression</h3>
+                                <div class="project__links">
+                                    <a href="https://github.com/marcazdaou/Huffman-Code" target="_blank" class="project__link" aria-label="GitHub"><i class='bx bxl-github'></i></a>
+                                </div>
+                            </div>
+                            <p class="project__desc">High-efficiency Huffman encoding algorithm achieving up to 50% file size reduction. Implements a frequency-based binary tree and optimal prefix-free code generation entirely in C.</p>
+                            <div class="project__tags">
+                                <span class="skill__tag skill__tag--sm">C</span>
+                                <span class="skill__tag skill__tag--sm">Data Structures</span>
+                                <span class="skill__tag skill__tag--sm">Algorithm Design</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project__card">
+                        <div class="project__banner project__banner--purple">
+                            <i class='bx bx-lock-alt project__banner-icon'></i>
+                            <span class="project__banner-label">Cryptography · Python</span>
+                        </div>
+                        <div class="project__content">
+                            <div class="project__header">
+                                <h3 class="project__title">RSA Cryptosystem</h3>
+                                <div class="project__links">
+                                    <a href="https://github.com/marcazdaou/RSA-cryptosystem" target="_blank" class="project__link" aria-label="GitHub"><i class='bx bxl-github'></i></a>
+                                </div>
+                            </div>
+                            <p class="project__desc">Built a secure RSA cryptosystem from scratch — key generation, encryption, and decryption — relying on the mathematical difficulty of large prime factorization with a focus on correctness and security principles.</p>
+                            <div class="project__tags">
+                                <span class="skill__tag skill__tag--sm">Python</span>
+                                <span class="skill__tag skill__tag--sm">Cryptography</span>
+                                <span class="skill__tag skill__tag--sm">Number Theory</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project__card">
+                        <div class="project__banner project__banner--teal">
+                            <i class='bx bx-search-alt project__banner-icon'></i>
+                            <span class="project__banner-label">Java · Search</span>
+                        </div>
+                        <div class="project__content">
+                            <div class="project__header">
+                                <h3 class="project__title">Autocomplete System</h3>
+                                <div class="project__links">
+                                    <a href="https://github.com/marcazdaou/Autocomplete" target="_blank" class="project__link" aria-label="GitHub"><i class='bx bxl-github'></i></a>
+                                </div>
+                            </div>
+                            <p class="project__desc">Intelligent autocomplete system processing 10,000+ query terms with O(log N) binary search efficiency. Implements term ranking for real-time search suggestions with fast prefix matching.</p>
+                            <div class="project__tags">
+                                <span class="skill__tag skill__tag--sm">Java</span>
+                                <span class="skill__tag skill__tag--sm">Binary Search</span>
+                                <span class="skill__tag skill__tag--sm">Term Ranking</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
             <!--===== CONTACT =====-->
-<section class="contact section" id="contact">
-    <h2 class="section-title">Contact</h2>
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Contact</h2>
 
-    <div class="contact__container bd-grid">
-        <form id="contact-form" class="contact__form">
-            <!-- Updated field names to match your template variables -->
-            <input type="text" name="from_name" placeholder="Name" class="contact__input" required>
-            <input type="email" name="from_email" placeholder="Email" class="contact__input" required>
-            <textarea name="from_message" cols="0" rows="10" placeholder="Message" class="contact__input" required></textarea>
-            <!-- Hidden field for to_name if needed -->
-            <input type="hidden" name="to_name" value="Marc">
-            <button type="submit" class="contact__button button">Send</button>
-        </form>
-    </div>
-</section>
+                <div class="contact__container bd-grid">
+                    <div class="contact__info">
+                        <p class="contact__tagline">Have a question or want to work together? I'd love to hear from you.</p>
+                        <div class="contact__details">
+                            <div class="contact__detail">
+                                <i class='bx bx-envelope contact__detail-icon'></i>
+                                <span>marcazdaou@gmail.com</span>
+                            </div>
+                            <div class="contact__detail">
+                                <i class='bx bx-phone contact__detail-icon'></i>
+                                <span>(617) 937-9799</span>
+                            </div>
+                            <div class="contact__detail">
+                                <i class='bx bx-map contact__detail-icon'></i>
+                                <span>Boston, Massachusetts</span>
+                            </div>
+                        </div>
+                        <div class="contact__social">
+                            <a href="https://www.linkedin.com/in/marc-abi-zeid-daou/" target="_blank" class="contact__social-link"><i class='bx bxl-linkedin'></i></a>
+                            <a href="https://github.com/marcazdaou" target="_blank" class="contact__social-link"><i class='bx bxl-github'></i></a>
+                        </div>
+                    </div>
 
-<!-- Contact Script -->
-<script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
-<script type="text/javascript">
-    (function() {
-        // Initialize EmailJS with your user ID
-        emailjs.init("VOrBEAYCDJL6135xN");
-    })();
-
-    // Handle form submission
-    document.getElementById('contact-form').addEventListener('submit', function(event) {
-        event.preventDefault();
-        
-        // Show sending status
-        this.querySelector('button').textContent = 'Sending...';
-        
-        // Send the email using EmailJS
-        emailjs.sendForm('service_6k1shfo', 'template_ap0dnti', this)
-            .then(function() {
-                // Show success message
-                document.getElementById('contact-form').reset();
-                document.getElementById('contact-form').querySelector('button').textContent = 'Send';
-                alert('Your message has been sent successfully!');
-            }, function(error) {
-                // Show error message
-                document.getElementById('contact-form').querySelector('button').textContent = 'Send';
-                alert('Sorry, there was an error sending your message. Please try again later.');
-                console.log('EmailJS error:', error);
-            });
-    });
-</script>
+                    <form id="contact-form" class="contact__form">
+                        <input type="text"  name="from_name"    placeholder="Your Name"    class="contact__input" required>
+                        <input type="email" name="from_email"   placeholder="Your Email"   class="contact__input" required>
+                        <textarea           name="from_message" placeholder="Your Message" class="contact__input" rows="6" required></textarea>
+                        <input type="hidden" name="to_name" value="Marc">
+                        <button type="submit" class="contact__button button">
+                            Send Message <i class='bx bx-send'></i>
+                        </button>
+                    </form>
+                </div>
+            </section>
+        </main>
 
         <!--===== FOOTER =====-->
         <footer class="footer">
-            <p class="footer__title">Marc</p>
+            <p class="footer__title">Marc<span class="footer__dot">.</span></p>
             <div class="footer__social">
-                <a href="https://www.linkedin.com/in/marc-abi-zeid-daou/" class="footer__icon"><i class='bx bxl-linkedin' ></i></a>
-                <a href="https://github.com/marcazdaou?tab=repositories" class="footer__icon"><i class='bx bxl-github' ></i></a>
+                <a href="https://www.linkedin.com/in/marc-abi-zeid-daou/" class="footer__icon" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/marcazdaou" class="footer__icon" target="_blank"><i class='bx bxl-github'></i></a>
             </div>
+            <p class="footer__copy">&copy; 2026 Marc Abi Zeid Daou. All rights reserved.</p>
         </footer>
-       
 
-        <!--===== SCROLL REVEAL =====-->
-        <script src="https://unpkg.com/scrollreveal"></script>
+        <!--===== EMAIL JS =====-->
+        <script src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+        <script>
+            (function() { emailjs.init("VOrBEAYCDJL6135xN"); })();
+
+            document.getElementById('contact-form').addEventListener('submit', function(e) {
+                e.preventDefault();
+                const btn = this.querySelector('button');
+                btn.textContent = 'Sending...';
+
+                emailjs.sendForm('service_6k1shfo', 'template_ap0dnti', this)
+                    .then(function() {
+                        document.getElementById('contact-form').reset();
+                        btn.innerHTML = 'Send Message <i class="bx bx-send"></i>';
+                        alert('Message sent successfully!');
+                    }, function() {
+                        btn.innerHTML = 'Send Message <i class="bx bx-send"></i>';
+                        alert('Error sending message. Please try again.');
+                    });
+            });
+        </script>
 
         <!--===== MAIN JS =====-->
         <script src="assets/js/main.js"></script>
