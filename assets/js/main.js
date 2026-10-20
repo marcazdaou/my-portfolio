@@ -32,7 +32,7 @@ window.addEventListener('scroll', () => {
 /*===== TYPEWRITER =====*/
 (function initTypewriter() {
     const el    = document.getElementById('typewriter');
-    const words = ['Software Engineer', 'Full-Stack Developer', 'Data Engineer', 'Compiler Builder'];
+    const words = ['Data Scientist', 'ML Engineer', 'Full-Stack Developer', 'Software Engineer'];
     let wi = 0, ci = 0, deleting = false;
 
     function tick() {
@@ -61,22 +61,19 @@ window.addEventListener('scroll', () => {
     if (!output) return;
 
     const script = [
-        { text: '$ python job_market.py',                  type: 'command'  },
-        { text: '  Loading 784 job postings...',            type: 'output'   },
-        { text: '  Engineering 46 features...',             type: 'output'   },
-        { text: '  Training Ridge / Lasso / RF models...',  type: 'output'   },
-        { text: '  ✓ Best model  CV R² = 0.55',            type: 'success'  },
-        { text: '  → Salary estimate: $95,400 / yr',        type: 'highlight'},
+        { text: '$ python -m pipeline job_market',          type: 'command'  },
+        { text: '  Cleaning 394,300 job postings...',       type: 'output'   },
+        { text: '  Standardizing 64,574 salaries...',       type: 'output'   },
+        { text: '  ✓ Salary model  R² = 0.77',              type: 'success'  },
+        { text: '',                                         type: 'output'   },
+        { text: '$ python -m analysis.run_pipeline',        type: 'command'  },
+        { text: '  Loading 1,067,371 transactions...',      type: 'output'   },
+        { text: '  ✓ Repurchase model  AUC = 0.795',        type: 'success'  },
+        { text: '  ✓ Recommendations beat best-sellers',    type: 'success'  },
         { text: '',                                         type: 'output'   },
         { text: '$ ./compile Main.j--',                     type: 'command'  },
         { text: '  Lexing → Parsing → AST → Bytecode',     type: 'output'   },
         { text: '  ✓ 15 language features compiled',        type: 'success'  },
-        { text: '  ✓ TABLESWITCH optimization applied',     type: 'success'  },
-        { text: '',                                         type: 'output'   },
-        { text: '$ python manage.py runserver',             type: 'command'  },
-        { text: '  ✓ Django app live on Render',            type: 'success'  },
-        { text: '  ✓ PostgreSQL connected',                 type: 'success'  },
-        { text: '  ✓ 16-product catalog serving...',        type: 'success'  },
     ];
 
     let lineIdx = 0, charIdx = 0;
